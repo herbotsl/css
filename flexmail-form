@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #e6f3fd;
     font-family: 'Roboto', Arial, sans-serif;
     font-weight: 400;
     color: #003049;
@@ -80,7 +80,7 @@ textarea.form-control {
     border: none !important;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #00578A !important;
+    background-color: #65beec !important;
     color: #fff !important;
     font-weight: 700 !important;
     padding: 15px 30px;
