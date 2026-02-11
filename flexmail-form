@@ -1,0 +1,157 @@
+/* ---------------- KU LEUVEN – FORM CSS ---------------- */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 400;
+    color: #003049;
+}
+
+#outer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 480px;
+    margin: 50px auto;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+/* Tekst & titels */
+#container-intro-text,
+.Text {
+    color: #003049;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.Title {
+    color: #00578A;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.title-form {
+    color: #003049;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+/* Labels */
+label {
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    font-size: 14px;
+    color: #003049;
+}
+
+/* Form fields */
+.form-control {
+    background-color: #fff;
+    border: 1px solid #6EC1E4;
+    border-radius: 4px;
+    color: #003049;
+    font-size: 14px;
+    height: 44px;
+    padding: 6px 12px;
+    width: 100%;
+    transition: border-color .2s, box-shadow .2s;
+}
+
+.form-control:focus {
+    border-color: #00578A;
+    box-shadow: 0 0 4px rgba(0,87,138,0.4);
+}
+
+textarea.form-control {
+    min-height: 100px;
+}
+
+/* Buttons */
+.btn {
+    border: none !important;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #00578A !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+    padding: 15px 30px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #003049 !important;
+}
+
+/* Links */
+.disclaimer a {
+    color: #00578A;
+    text-decoration: underline;
+}
+
+.disclaimer a:hover {
+    color: #003049;
+}
+
+/* Error messages */
+div#container-preview, 
+div#container-error-required {
+    background-color: #fde8e8;
+    border: 1px solid #c62828;
+    color: #000;
+    font-size: 12px;
+    max-width: 480px;
+    padding: 10px;
+    margin: 10px auto 0;
+}
+
+#warning {
+    font-weight: bold;
+}
+
+/* Radiobuttons & checkboxes */
+input[type=checkbox]:not(old) + label > span,
+input[type=radio]:not(old) + label > span {
+    border: 1px solid #6EC1E4;
+    background: #fff;
+}
+
+/* Checkbox checked */
+input[type=checkbox]:not(old):checked + label > span:before {
+    content: '✔';
+    color: #00578A;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: -5px;
+}
+
+/* Radiobutton checked */
+input[type=radio]:not(old):checked + label > span > span {
+    background: #00578A;
+    border: 1px solid #003049;
+}
+
+.disclaimer {
+    border-top: 1px solid #dddddd;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media screen and (max-width: 480px),
+screen and (min-device-width: 481px) and (max-width: 800px) {
+    .container {
+        width: 100% !important;
+        padding: 20px;
+    }
+}
